@@ -16,6 +16,8 @@ class App extends Component {
 		      user: null
 		    }
 		  }
+
+
 	render() {
 	  return (
 	    <div className="App">
