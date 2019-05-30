@@ -1,26 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
+import Nav from './layout/Nav';
 import './App.css';
+import Home from './Home';
+import Resources from './Resources';
+import Chat from './Chat';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+	constructor(props){
+    super(props);
+		this.state = {
+		      user: null
+		    }
+		  }
+	render() {
+	  return (
+	    <div className="App">
+	 			<Router>
+	          <div >
+	            <Nav user={this.state.user}/>
+		        	<div className="container1">
+		        		<Route path="/" exact component={
+			              () => (<Home user={this.state.user} getUser={this.getUser} />)
+			            } />
+			            <Route path="/resources"  component={
+			              () => (<Resources user={this.state.user} getUser={this.getUser} />)
+			            } />
+			            <Route path="/chat" component={
+			              () => (<Chat user={this.state.user} getUser={this.getUser} />)
+			            } />
+		            </div>
+		          </div>
+	        </Router>
+	    </div>
+	  );
+	}
 }
-
 export default App;
+
