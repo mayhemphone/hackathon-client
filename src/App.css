@@ -33,7 +33,7 @@
 }
 
 .welcomeCenter {
-	
+
 	background-color: #fff;
   min-height: 100vh;
   display: flex;
@@ -43,5 +43,17 @@
   font-size: calc(10px + 2vmin);
   color: #333;
   padding:0;
- 
+}
+
+.row_card_resource{
+  display: flex;
+}
+
+.allcards{
+min-height: 15vh;
+min-width: 30vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
 }
