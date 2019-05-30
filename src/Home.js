@@ -10,7 +10,7 @@ class Home extends Component {
   }
 	render() {
 		return(
-			<div class="welcomeCenter">
+			<div class="container">
 			 <Row>
 	      <Col xs='12'>
 	        <Card body>
