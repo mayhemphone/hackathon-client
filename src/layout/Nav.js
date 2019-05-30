@@ -6,7 +6,7 @@ class Nav extends Component {
 	constructor(props){
     super(props);
     this.state = {
-      user: this.props.user
+      user: this.props.user,
     };
   }
 
@@ -16,10 +16,10 @@ class Nav extends Component {
 		return(
 			<div>
 					
-					<header className="App-header">
-            {this.state.user ? <h6 className="welcome">Welcome, {this.state.user} </h6> : <h6></h6>}
+					{/*<header className="App-header">
+            {this.props.user ? <h6 className="welcome">Hey, {this.props.user} </h6> : <h6></h6>}
           </header>
-
+*/}
           <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/resources">Resources</Link>

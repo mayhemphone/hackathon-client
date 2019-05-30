@@ -1,43 +1,71 @@
 import React, { Component } from 'react'
-import { Card, Button, CardTitle, CardText, Row, Col, Form, Input } from 'reactstrap';
+import { Label, Card, Button, CardTitle, CardText, Row, Col, Form, Input } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
 
 class Home extends Component {
 	constructor(props){
     super(props);
     this.state = {
-      user: null,
+      user: this.props.user,
       userTemp: null
     };
   }
 
  handleUserChange = (e) => { this.setState({ userTemp: e.target.value }); }
-
-handleSubmit = (e) => {
-	e.preventDefault()
-	this.setState({ user: this.state.userTemp })
-
-}
+ handleSubmit =(e) => {
+ 		e.preventDefault()
+ 		this.props.handleNameSubmit(this.state.userTemp)
+ }
 
 	render() {
-		return(
-			<div className="container">
-			 <Row>
-	      <Col xs='12'>
-	        <Card body>
-	          <CardTitle>Hey there,</CardTitle>
-	          <CardText>What can I call you?</CardText>
-	          	<Form onSubmit={this.handleSubmit}>
-								<Input name="user" placeholder="Name or nickname?" value={this.state.userTemp} onChange={this.handleUserChange} />
-								<br />
-	          	<Button block type="submit">Ready</Button>
-	          </Form>
-	          <p>{this.state.user}</p>
-	        </Card>
-	      </Col>
 
-	     </Row>
-			</div>
-		)
+		if (!this.state.user) {
+			return(
+				<div className="container">
+				 <Row>
+		      <Col xs={{ size: 10, offset: 1 }}>
+		        <div className="topContent">
+			       	<h1 className="thin">WELCOME</h1>
+			       	<h5 className="thin">So glad you're here!</h5>
+	       		</div>
+		        <div className="bottomContent">
+		          <Form onSubmit={this.handleSubmit}>
+		          	<Label>What can I call you?</Label>
+									<Input name="user" placeholder="Name or nickname?" value={this.state.userTemp} onChange={this.handleUserChange} />
+									
+		          	<Button className="float-right" type="submit">Ready</Button>
+		          </Form>
+		        </div>
+		      </Col>
+		     </Row>
+				</div>
+			)
+		} else {
+			return(
+				<div className="container">
+					<div className="topContent">
+						<Row className="cardMargin">
+					    <Col xs={{ size: 10, offset: 1 }}>
+								<h3 className="">Welcome, {this.props.user}</h3>
+								<p className=""> How can we help you today?</p>
+							</Col>
+						</Row>
+					</div>
+					<div className="bottomContent">
+						<Row className="cardMargin">
+				      <Col xs='6'>
+				        <Button className="circle">Chat</Button>
+				      </Col>
+				      <Col xs='6'>
+				        <Button className="circle" >Resources</Button>
+				      </Col>
+				    </Row>
+			    </div>
+				</div>
+
+			)
+		}
 	}
 }
 
