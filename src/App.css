@@ -9,14 +9,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+   background-color: white;
+  color:#333;
+  padding: 1em 0 1em 0.5em;
+  text-align: left;
+  margin-bottom:2em;
+  width: 100%;
 }
 
 .App-link {
@@ -33,7 +31,7 @@
 }
 
 .welcomeCenter {
-	
+
 	background-color: #fff;
   min-height: 100vh;
   display: flex;
@@ -44,4 +42,54 @@
   color: #333;
   padding:0;
  
+}
+.chatCenter {
+
+	background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #333;
+  padding:0;
+  width: 100vw;
+ 
+}
+#chatWindow {
+	height:20em;
+}
+
+.container1 {
+	min-height: 100vh;
+	width:100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  /*bottom*/
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  /*color: white;*/
+  color:#333;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: hotpink;
 }

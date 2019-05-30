@@ -22,7 +22,7 @@ class App extends Component {
 	 			<Router>
 	          <div >
 	            <Nav user={this.state.user}/>
-		        	<div className="container1">
+		        	<div className="">
 		        		<Route path="/" exact component={
 			              () => (<Home user={this.state.user} getUser={this.getUser} />)
 			            } />

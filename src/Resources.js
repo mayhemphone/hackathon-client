@@ -4,7 +4,7 @@ class Resources extends Component {
 	render() {
 		return(
 			<div>
-				content
+				Resources
 			</div>
 		)
 	}
