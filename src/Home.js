@@ -19,11 +19,11 @@ class Home extends Component {
 	          	<Form onSubmit={this.handleSubmit}>
 								<Input name="user" placeholder="Name or nickname?" value={this.state.user} onChange={this.userChage} />
 								<br />
-							</Form> 
+							</Form>
 	          <Button >Ready</Button>
 	        </Card>
 	      </Col>
-	      
+
 	     </Row>
 			</div>
 		)

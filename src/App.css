@@ -41,8 +41,24 @@
   font-size: calc(10px + 2vmin);
   color: #333;
   padding:0;
- 
+
 }
+
+.row_card_resource{
+  display: flex;
+}
+
+.allcards{
+min-height: 15vh;
+min-width: 30vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+ 
+
 .chatCenter {
 
 	background-color: #fff;
@@ -93,3 +109,4 @@ nav a {
 nav a:hover {
   color: hotpink;
 }
+
