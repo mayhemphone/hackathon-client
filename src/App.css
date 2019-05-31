@@ -97,6 +97,7 @@ nav {
   bottom: 0;
   z-index: 2;
   justify-content:space-evenly;
+  background-color: #CDC7D9;
 }
 
 nav a {
