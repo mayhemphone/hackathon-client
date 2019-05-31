@@ -68,7 +68,7 @@ class Resources extends Component {
 				<div className="container">
 					<Row className="row_card_resource">
 						<Col xs='6'>
-							<Button onClick={() => this.toggle1()} className="circle secondary">Same day crisis support</Button>
+							<Button onClick={() => this.toggle1()} className="circle secondary b1">Same day crisis support</Button>
 						</Col>
 						<Col xs='6'>
 							<Button onClick={() => this.toggle2()} className="circle secondary">Brief support visits</Button>
