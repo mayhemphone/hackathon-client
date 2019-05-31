@@ -5,17 +5,13 @@
 body{
 	background-color: #CDC7D9;
 }
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 .App-header {
   color:#333;
-  padding: 1em 0 1em 0.5em;
+  padding: 1em 0 0 0.5em;
   text-align: left;
-  margin-bottom:2em;
+  /*margin-bottom:2em;*/
   width: 100%;
 }
 
@@ -77,15 +73,6 @@ body{
 }
 #chatWindow {
 	height:25em;
-}
-
-.container1 {
-	min-height: 100vh;
-	width:100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -159,9 +146,18 @@ input, textarea {
 	background-color: #522888;
 }
 .title{
-	margin: 6em 1em 2em 1em;
+	margin: 4em 1em 2em 1em;
 	text-align: left;
 }
 .mainContainer{
 	margin-bottom: 5em;
+}
+
+.logo-font {
+	font-family: 'Nanum Pen Script', cursive;
+
+}
+
+.logo{
+	max-height: 50px;
 }

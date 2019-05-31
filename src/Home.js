@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Label, Card, Button, CardTitle, CardText, Row, Col, Form, Input } from 'reactstrap';
+import { Label, Button, Row, Col, Form, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 
@@ -41,7 +41,7 @@ class Home extends Component {
 		        <div className="bottomContent">
 		          <Form onSubmit={this.handleSubmit}>
 		          	<Label>What can I call you?</Label>
-									<Input name="user" placeholder="Name or nickname?" value={this.state.userTemp} onChange={this.handleUserChange} />
+									<Input name="user" placeholder="Name or nickname?" onChange={this.handleUserChange} />
 									
 		          	<Button className="float-right secondary" type="submit">Ready</Button>
 		          </Form>

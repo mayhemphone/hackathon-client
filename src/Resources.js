@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Card, Button, CardTitle, CardText, Row, Col, Form, Input,Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import {  Link } from 'react-router-dom';
+import { Button, Row, Col, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class Resources extends Component {
 	constructor(props) {
@@ -69,38 +68,26 @@ class Resources extends Component {
 				<div className="container">
 					<Row className="row_card_resource">
 						<Col xs='6'>
-								<Link onClick={() => this.toggle1()} >
-										<Button className="circle secondary">Same day crisis support</Button>
-								</Link>
+							<Button onClick={() => this.toggle1()} className="circle secondary">Same day crisis support</Button>
 						</Col>
 						<Col xs='6'>
-							<Link onClick={() => this.toggle2()} >
-										<Button className="circle secondary">Brief support visits</Button>
-							</Link>
+							<Button onClick={() => this.toggle2()} className="circle secondary">Brief support visits</Button>
 						</Col>
 					</Row>
 					<Row>
 						<Col xs='6'>
-							<Link onClick={() => this.toggle3()} >
-										<Button className="circle secondary">Short term therapy</Button>
-							</Link>
+							<Button onClick={() => this.toggle3()} className="circle secondary">Short term therapy</Button>
 						</Col>
 						<Col xs='6'>
-							<Link onClick={() => this.toggle4()} >
-										<Button className="circle secondary">Group counseling</Button>
-							</Link>
+							<Button onClick={() => this.toggle4()} className="circle secondary">Group counseling</Button>
 						</Col>
 					</Row>
 					<Row>
 						<Col xs='6'>
-							<Link onClick={() => this.toggle5()} >
-										<Button className="circle secondary">Psych. care + med management</Button>
-							</Link>
+							<Button onClick={() => this.toggle5()} className="circle secondary">Psych. care + med management</Button>
 						</Col>
 						<Col xs='6'>
-							<Link onClick={() => this.toggle6()} >
-										<Button className="circle secondary">Pet therapy</Button>
-							</Link>
+							<Button onClick={() => this.toggle6()} className="circle secondary">Pet therapy</Button>
 						</Col>
 					</Row>
 				</div>

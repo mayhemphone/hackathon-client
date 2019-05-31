@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
+
 class Nav extends Component {
 
 	constructor(props){
@@ -16,10 +17,10 @@ class Nav extends Component {
 		return(
 			<div>
 					
-					{/*<header className="App-header">
-            {this.props.user ? <h6 className="welcome">Hey, {this.props.user} </h6> : <h6></h6>}
+					<header className="App-header">
+						<img alt="Worth it Logo" className="logo" src="./worthit.png" />	
           </header>
-*/}
+
           <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/resources">Resources</Link>
