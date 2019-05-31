@@ -10,7 +10,7 @@
 }
 
 .App-header {
-   background-color: white;
+  background-color: white;
   color:#333;
   padding: 1em 0 1em 0.5em;
   text-align: left;
@@ -50,12 +50,12 @@
 }
 
 .allcards{
-min-height: 15vh;
-min-width: 30vh;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 20px;
+	min-height: 15vh;
+	min-width: 15vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
 }
 
  
@@ -75,7 +75,7 @@ margin-bottom: 20px;
  
 }
 #chatWindow {
-	height:20em;
+	height:25em;
 }
 
 .container1 {
@@ -111,4 +111,54 @@ nav a {
 nav a:hover {
   color: hotpink;
 }
+
+.links {
+	color:green;
+}
 .noGlow, textarea, select, input, button { outline: none; }
+
+.{
+	margin: 1em 0em;
+}
+.text-left{
+	text-align: left;
+}
+
+h5 {
+	font-weight: 400;
+}
+.topContent{
+	margin-top: 10em;
+}
+.bottomContent{
+	margin-top: 10em;
+}
+label {
+	font-size: 2em;
+	font-weight: 200;
+}
+.thin, h1, p, h2, h3, h4, h5, h6 {
+	font-weight: 200;
+
+}
+
+input, textarea {
+	margin-bottom: .5rem;
+}
+.center {
+	text-align: !important center;
+}
+.circle{
+	border-radius: 9rem;
+	height:9rem;
+	width: 9rem;
+	margin: .5rem 0rem;
+
+}
+.title{
+	margin: 6em 1em 2em 1em;
+	text-align: left;
+}
+.mainContainer{
+	margin-bottom: 5em;
+}
