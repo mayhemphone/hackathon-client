@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Row, Col, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {FaHandHoldingHeart , FaDog, FaUserMd, FaChild, FaHandshake, FaUserFriends} from "react-icons/fa";
 
 class Resources extends Component {
 	constructor(props) {
@@ -93,7 +94,7 @@ class Resources extends Component {
 				</div>
 
 				<Modal isOpen={this.state.modal1} toggle={this.toggle1} className={this.props.className} centered={true} >
-          <ModalHeader toggle={this.toggle1}>Same day crisis support</ModalHeader>
+          <ModalHeader toggle={this.toggle1}><FaHandHoldingHeart/> Same day crisis support</ModalHeader>
           <ModalBody>
             We offer crisis support during office hours to students with urgent needs.
 						This service is available on a first-come, first-served drop-in basis and focuses on addressing
@@ -103,7 +104,7 @@ class Resources extends Component {
         </Modal>
 
 				<Modal isOpen={this.state.modal2} toggle={this.toggle2} className={this.props.className} centered={true} >
-          <ModalHeader toggle={this.toggle2}>Brief support visits</ModalHeader>
+          <ModalHeader toggle={this.toggle2}> <FaChild/>	Brief support visits</ModalHeader>
           <ModalBody>
             During a 20-minute visit, you will discuss your concerns with a counselor and get
 						feedback, advice, and treatment options. This appointment is the first step to getting other
@@ -112,7 +113,7 @@ class Resources extends Component {
         </Modal>
 
 				<Modal isOpen={this.state.modal3} toggle={this.toggle3} className={this.props.className} centered={true} >
-          <ModalHeader toggle={this.toggle3}>Short term therapy</ModalHeader>
+          <ModalHeader toggle={this.toggle3}><FaHandshake/>  Short term therapy</ModalHeader>
           <ModalBody>
             Short-term therapy helps you clarify concerns, identify goals, and work towards feeling better.
 						 Each visit lasts 45-60 minutes and most clients are seen for 12 or fewer sessions.
@@ -121,7 +122,7 @@ class Resources extends Component {
         </Modal>
 
 				<Modal isOpen={this.state.modal4} toggle={this.toggle4} className={this.props.className} centered={true} >
-          <ModalHeader toggle={this.toggle4}>Group counseling</ModalHeader>
+          <ModalHeader toggle={this.toggle4}><FaUserFriends/> Group counseling</ModalHeader>
           <ModalBody>
             Some groups are a set length with a focus on developing specific skills,
 						while others are open-ended and less structured. All groups are designed to provide a safe and
@@ -131,7 +132,7 @@ class Resources extends Component {
         </Modal>
 
 				<Modal isOpen={this.state.modal5} toggle={this.toggle5} className={this.props.className} centered={true} >
-          <ModalHeader toggle={this.toggle5}>Psychiatric care & medication management</ModalHeader>
+          <ModalHeader toggle={this.toggle5}><FaUserMd/> Psychiatric care & medication management</ModalHeader>
           <ModalBody>
              Our psychiatric providers can provide you with an evaluation, treatment recommendations,
 						 and psychiatric medication management if appropriate.
@@ -139,7 +140,7 @@ class Resources extends Component {
         </Modal>
 
 				<Modal isOpen={this.state.modal6} toggle={this.toggle6} className={this.props.className} centered={true} >
-          <ModalHeader toggle={this.toggle6}>Pet therapy</ModalHeader>
+          <ModalHeader toggle={this.toggle6}><FaDog/>  Pet therapy</ModalHeader>
           <ModalBody>
           Free weekly visits with trained therapy dogs at Hall Health can help address stress as well as
 					soothe some symptoms of depression and anxiety.
