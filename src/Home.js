@@ -29,7 +29,7 @@ class Home extends Component {
 
 	render() {
 
-		if (!this.state.user) {
+		if (this.state.user == 'Anonymous') {
 			return(
 				<div className="container">
 				 <Row>
@@ -65,7 +65,7 @@ class Home extends Component {
 						<Row className="cardMargin">
 				      <Col xs='6'>
 				      <Link to="/chat">
-				        <Button className="circle secondary">Chat</Button>
+				        <Button className="circle secondary">Support</Button>
 				      </Link>
 				      </Col>
 				      <Col xs='6'>

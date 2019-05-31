@@ -26,7 +26,7 @@ class Nav extends Component {
           <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/resources">Resources</Link>
-						<Link to="/chat">Chat</Link>
+						<Link to="/chat">Support</Link>
           </nav>
         </div>
 		)

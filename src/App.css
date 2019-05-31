@@ -150,12 +150,14 @@ input, textarea {
 	height:9rem;
 	width: 9rem;
 	margin: .5rem 0rem;
+	border: 0;
+	/*box-shadow: 1px 1px 4px .2px;*/
 }
 .secondary {
 	background-color: #522888;
 }
 .title{
-	margin: 4em 1em 2em 1em;
+	margin: 3em 1em 2em 1em;
 	text-align: left;
 }
 .mainContainer{

@@ -69,7 +69,7 @@ class Resources extends Component {
 				<div className="container">
 					<Row className="row_card_resource">
 						<Col xs='6'>
-							<Button onClick={() => this.toggle1()} className="circle secondary b1">Same day crisis support</Button>
+							<Button onClick={() => this.toggle1()} className="circle secondary">Same day crisis support</Button>
 						</Col>
 						<Col xs='6'>
 							<Button onClick={() => this.toggle2()} className="circle secondary">Brief support visits</Button>
@@ -100,6 +100,9 @@ class Resources extends Component {
 						This service is available on a first-come, first-served drop-in basis and focuses on addressing
 						immediate needs and establishing a plan. If you are in crisis, check in on the first floor of Hall Health
 						for same-day care.
+						<br /><br />
+						Crisis Connections
+						This 24 hour, toll-free, telephone hotline provides immediate, confidential assistance to people in distress in the King County area. Call 1-866-4-CRISIS (1-866-427-4747) or 206-461-3222.
           </ModalBody>
         </Modal>
 
