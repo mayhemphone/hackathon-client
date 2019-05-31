@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Button, CardTitle, CardText, Row, Col, Form, Input } from 'reactstrap';
+import axios from 'axios';
 
 
 class Chat extends Component {
@@ -23,18 +24,18 @@ class Chat extends Component {
 		          	<Form onSubmit={this.handleSubmit}>
 									<Input className="noGlow" id="chatWindow" type="textarea" name="user" placeholder="Describe what you're feeling..." value={this.state.user} onChange={this.userChage} />
 									<br />
-								</Form> 
+								</Form>
 		          <Button >Ready</Button>
 		        </Card>
 		      </Col>
 		     </Row>
-			</div>	
+			</div>
 			)
 		}else{
 			return(
 				<div className="container">
 				 Results
-			</div>	
+			</div>
 			)
 		}
 	}
