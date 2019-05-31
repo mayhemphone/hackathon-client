@@ -70,36 +70,36 @@ class Resources extends Component {
 					<Row className="row_card_resource">
 						<Col xs='6'>
 								<Link onClick={() => this.toggle1()} >
-										<Button className="circle">Same day crisis support</Button>
+										<Button className="circle secondary">Same day crisis support</Button>
 								</Link>
 						</Col>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle2()} >
-										<Button className="circle">Brief support visits</Button>
+										<Button className="circle secondary">Brief support visits</Button>
 							</Link>
 						</Col>
 					</Row>
 					<Row>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle3()} >
-										<Button className="circle">Short term therapy</Button>
+										<Button className="circle secondary">Short term therapy</Button>
 							</Link>
 						</Col>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle4()} >
-										<Button className="circle">Group counseling</Button>
+										<Button className="circle secondary">Group counseling</Button>
 							</Link>
 						</Col>
 					</Row>
 					<Row>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle5()} >
-										<Button className="circle">Psych. care + med management</Button>
+										<Button className="circle secondary">Psych. care + med management</Button>
 							</Link>
 						</Col>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle6()} >
-										<Button className="circle">Pet therapy</Button>
+										<Button className="circle secondary">Pet therapy</Button>
 							</Link>
 						</Col>
 					</Row>

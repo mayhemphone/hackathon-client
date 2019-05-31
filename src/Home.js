@@ -43,7 +43,7 @@ class Home extends Component {
 		          	<Label>What can I call you?</Label>
 									<Input name="user" placeholder="Name or nickname?" value={this.state.userTemp} onChange={this.handleUserChange} />
 									
-		          	<Button className="float-right" type="submit">Ready</Button>
+		          	<Button className="float-right secondary" type="submit">Ready</Button>
 		          </Form>
 		        </div>
 		      </Col>
@@ -65,12 +65,12 @@ class Home extends Component {
 						<Row className="cardMargin">
 				      <Col xs='6'>
 				      <Link to="/chat">
-				        <Button className="circle">Chat</Button>
+				        <Button className="circle secondary">Chat</Button>
 				      </Link>
 				      </Col>
 				      <Col xs='6'>
 				        <Link to="/resources">
-				        	<Button className="circle" >Resources</Button>
+				        	<Button className="circle secondary" >Resources</Button>
 				      	</Link>
 				      </Col>
 				    </Row>

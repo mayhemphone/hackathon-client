@@ -29,7 +29,7 @@ class Chat extends Component {
 		          	<Form onSubmit={this.handleSubmit}>
 									<Input className="noGlow" id="chatWindow" type="textarea" name="user" placeholder="Describe what you're feeling..." value={this.state.user} onChange={this.userChage} />
 								</Form> 
-		          	<Button onClick={this.submitChat} className="float-right" >Submit</Button>
+		          	<Button onClick={this.submitChat} className="float-right secondary" >Submit</Button>
 			      </Col>
 			     </Row>
 				</div>	
