@@ -1,10 +1,6 @@
-import React, { Component } from 'react'
-<<<<<<< HEAD
-import { Card, Button, CardTitle, CardText, Row, Col, Form, Input } from 'reactstrap';
-import axios from 'axios';
-=======
+import React, { Component } from 'react';
 import { Card, Button, CardSubtitle, CardBody, CardTitle, CardText, Row, Col, Form, Input } from 'reactstrap';
->>>>>>> f68b538abd519502e36bff0d18b52df3068d6667
+import axios from 'axios';
 
 
 class Chat extends Component {
@@ -12,13 +8,25 @@ class Chat extends Component {
     super(props);
     this.state = {
       user: null,
+			message:'',
       stage: 0
     };
   }
 
+ handleMessageChage = (e) => { this.setState({ message: e.target.value }); }
+
+
   submitChat = (e) =>{
   	e.preventDefault()
   	this.setState({stage:1})
+		axios.post("http://localhost:8000/chat/",{message: this.state.message })
+    .then(response=> {
+     console.log(response)
+    })
+    .catch(err => {
+      console.log('error axios to server:');
+      console.log(err);
+    })
   }
 	render() {
 
@@ -32,30 +40,17 @@ class Chat extends Component {
 						<Row className="row_card_resource">
 							<Col xs='12'>
 		          	<Form onSubmit={this.handleSubmit}>
-									<Input className="noGlow" id="chatWindow" type="textarea" name="user" placeholder="Describe what you're feeling..." value={this.state.user} onChange={this.userChage} />
-<<<<<<< HEAD
-									<br />
+									<Input className="noGlow" id="chatWindow" type="textarea" name="user" placeholder="Describe what you're feeling..." value={this.state.message} onChange={this.handleMessageChage} />
 								</Form>
-		          <Button >Ready</Button>
-		        </Card>
-		      </Col>
-		     </Row>
-=======
-								</Form> 
 		          	<Button onClick={this.submitChat} className="float-right" >Submit</Button>
 			      </Col>
 			     </Row>
-				</div>	
->>>>>>> f68b538abd519502e36bff0d18b52df3068d6667
+				</div>
 			</div>
 			)
 		}else{
 			return(
 				<div className="container">
-<<<<<<< HEAD
-				 Results
-			</div>
-=======
 				 <div className="title">
 						<h3>RESULTS</h3>
 					</div>
@@ -83,11 +78,9 @@ class Chat extends Component {
 		          <Button>Button</Button>
 		        </CardBody>
 		      </Card>
-			</div>	
->>>>>>> f68b538abd519502e36bff0d18b52df3068d6667
+			</div>
 			)
 		}
 	}
 }
-
 export default Chat;
