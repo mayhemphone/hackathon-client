@@ -105,7 +105,7 @@ class Resources extends Component {
 					</Row>
 				</div>
 
-				<Modal isOpen={this.state.modal1} toggle={this.toggle1} className={this.props.className} >
+				<Modal isOpen={this.state.modal1} toggle={this.toggle1} className={this.props.className} centered={true} >
           <ModalHeader toggle={this.toggle1}>Same day crisis support</ModalHeader>
           <ModalBody>
             We offer crisis support during office hours to students with urgent needs.
@@ -113,39 +113,27 @@ class Resources extends Component {
 						immediate needs and establishing a plan. If you are in crisis, check in on the first floor of Hall Health
 						for same-day care.
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle1}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle1}>Cancel</Button>
-          </ModalFooter>
         </Modal>
 
-				<Modal isOpen={this.state.modal2} toggle={this.toggle2} className={this.props.className} >
+				<Modal isOpen={this.state.modal2} toggle={this.toggle2} className={this.props.className} centered={true} >
           <ModalHeader toggle={this.toggle2}>Brief support visits</ModalHeader>
           <ModalBody>
             During a 20-minute visit, you will discuss your concerns with a counselor and get
 						feedback, advice, and treatment options. This appointment is the first step to getting other
 						Hall Health mental health services. You can schedule a brief support visit up to 24 hours in advance.
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle2}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle2}>Cancel</Button>
-          </ModalFooter>
         </Modal>
 
-				<Modal isOpen={this.state.modal3} toggle={this.toggle3} className={this.props.className} >
+				<Modal isOpen={this.state.modal3} toggle={this.toggle3} className={this.props.className} centered={true} >
           <ModalHeader toggle={this.toggle3}>Short term therapy</ModalHeader>
           <ModalBody>
             Short-term therapy helps you clarify concerns, identify goals, and work towards feeling better.
 						 Each visit lasts 45-60 minutes and most clients are seen for 12 or fewer sessions.
 						 We will help to connect you to longer-term therapy if needed.
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle3}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle3}>Cancel</Button>
-          </ModalFooter>
         </Modal>
 
-				<Modal isOpen={this.state.modal4} toggle={this.toggle4} className={this.props.className} >
+				<Modal isOpen={this.state.modal4} toggle={this.toggle4} className={this.props.className} centered={true} >
           <ModalHeader toggle={this.toggle4}>Group counseling</ModalHeader>
           <ModalBody>
             Some groups are a set length with a focus on developing specific skills,
@@ -153,35 +141,23 @@ class Resources extends Component {
 						welcoming space to receive support.  There is no limit on group therapy. Learn more about our groups and
 						find the schedule here.
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle4}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle4}>Cancel</Button>
-          </ModalFooter>
         </Modal>
 
-				<Modal isOpen={this.state.modal5} toggle={this.toggle5} className={this.props.className} >
+				<Modal isOpen={this.state.modal5} toggle={this.toggle5} className={this.props.className} centered={true} >
           <ModalHeader toggle={this.toggle5}>Psychiatric care & medication management</ModalHeader>
           <ModalBody>
              Our psychiatric providers can provide you with an evaluation, treatment recommendations,
 						 and psychiatric medication management if appropriate.
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle5}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle5}>Cancel</Button>
-          </ModalFooter>
         </Modal>
 
-				<Modal isOpen={this.state.modal6} toggle={this.toggle6} className={this.props.className} >
+				<Modal isOpen={this.state.modal6} toggle={this.toggle6} className={this.props.className} centered={true} >
           <ModalHeader toggle={this.toggle6}>Pet therapy</ModalHeader>
           <ModalBody>
           Free weekly visits with trained therapy dogs at Hall Health can help address stress as well as
-					soothe some symptoms of depression and anxiety. 
+					soothe some symptoms of depression and anxiety.
 					Learn more about pet therapy and find the schedule here.
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle6}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle6}>Cancel</Button>
-          </ModalFooter>
         </Modal>
 
 			</div>
