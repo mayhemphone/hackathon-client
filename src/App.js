@@ -26,9 +26,9 @@ handleNameSubmit = (name) => {
 	  return (
 	    <div className="App">
 	 			<Router>
-	          <div >
+	          <div className="mainContainer">
 	            <Nav user={this.state.user} />
-		        	<div className="">
+		        	<div >
 		        		<Route path="/" exact component={
 			              () => (<Home handleNameSubmit={this.handleNameSubmit} user={this.state.user} />)
 			            } />

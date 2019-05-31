@@ -63,57 +63,43 @@ class Resources extends Component {
 	render() {
 		return(
       <div className="container">
-				<div className="container">
-						<Card body className="allcards">
-							<CardText>Resources</CardText>
-						</Card>
+				<div className="title">
+					<h3>RESOURCES</h3>
 				</div>
 				<div className="container">
 					<Row className="row_card_resource">
 						<Col xs='6'>
 								<Link onClick={() => this.toggle1()} >
-									<Card body className="allcards">
-										<CardText>Same day crisis support</CardText>
-									</Card>
+										<Button className="circle">Same day crisis support</Button>
 								</Link>
 						</Col>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle2()} >
-									<Card body className="allcards">
-										<CardText>Brief support visits</CardText>
-									</Card>
+										<Button className="circle">Brief support visits</Button>
 							</Link>
 						</Col>
 					</Row>
 					<Row>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle3()} >
-									<Card body className="allcards">
-										<CardText>Short term therapy</CardText>
-									</Card>
+										<Button className="circle">Short term therapy</Button>
 							</Link>
 						</Col>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle4()} >
-									<Card body className="allcards">
-										<CardText>Group counseling</CardText>
-									</Card>
+										<Button className="circle">Group counseling</Button>
 							</Link>
 						</Col>
 					</Row>
 					<Row>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle5()} >
-									<Card body className="allcards">
-										<CardText>Psych. care + med management</CardText>
-									</Card>
+										<Button className="circle">Psych. care + med management</Button>
 							</Link>
 						</Col>
 						<Col xs='6'>
 							<Link onClick={() => this.toggle6()} >
-									<Card body className="allcards">
-										<CardText>Pet therapy</CardText>
-									</Card>
+										<Button className="circle">Pet therapy</Button>
 							</Link>
 						</Col>
 					</Row>

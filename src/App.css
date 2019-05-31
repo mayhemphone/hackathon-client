@@ -75,7 +75,7 @@
  
 }
 #chatWindow {
-	height:20em;
+	height:25em;
 }
 
 .container1 {
@@ -117,7 +117,7 @@ nav a:hover {
 }
 .noGlow, textarea, select, input, button { outline: none; }
 
-.cardMargin{
+.{
 	margin: 1em 0em;
 }
 .text-left{
@@ -142,7 +142,7 @@ label {
 
 }
 
-input {
+input, textarea {
 	margin-bottom: .5rem;
 }
 .center {
@@ -152,5 +152,13 @@ input {
 	border-radius: 9rem;
 	height:9rem;
 	width: 9rem;
+	margin: .5rem 0rem;
 
+}
+.title{
+	margin: 6em 1em 2em 1em;
+	text-align: left;
+}
+.mainContainer{
+	margin-bottom: 5em;
 }

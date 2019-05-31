@@ -12,11 +12,20 @@ class Home extends Component {
     };
   }
 
- handleUserChange = (e) => { this.setState({ userTemp: e.target.value }); }
- handleSubmit =(e) => {
+	handleUserChange = (e) => { this.setState({ userTemp: e.target.value }); }
+	handleSubmit =(e) => {
  		e.preventDefault()
  		this.props.handleNameSubmit(this.state.userTemp)
- }
+	}
+
+	handleClickChat = (e) => {
+		e.preventDefault()
+
+	}
+	handleClickResources= (e) => {
+		e.preventDefault() 
+
+	}
 
 	render() {
 
@@ -55,10 +64,14 @@ class Home extends Component {
 					<div className="bottomContent">
 						<Row className="cardMargin">
 				      <Col xs='6'>
+				      <Link to="/chat">
 				        <Button className="circle">Chat</Button>
+				      </Link>
 				      </Col>
 				      <Col xs='6'>
-				        <Button className="circle" >Resources</Button>
+				        <Link to="/resources">
+				        	<Button className="circle" >Resources</Button>
+				      	</Link>
 				      </Col>
 				    </Row>
 			    </div>
