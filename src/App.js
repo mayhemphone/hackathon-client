@@ -46,4 +46,3 @@ handleNameSubmit = (name) => {
 	}
 }
 export default App;
-
