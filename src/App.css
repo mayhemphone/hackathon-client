@@ -81,7 +81,7 @@ body{
  
 }
 #chatWindow {
-	height:25em;
+	height:20em;
 }
 
 
@@ -157,7 +157,7 @@ input, textarea {
 	background-color: #522888;
 }
 .title{
-	margin: 3em 1em 2em 1em;
+	margin: 4em 1em 2em 1em;
 	text-align: left;
 }
 .mainContainer{

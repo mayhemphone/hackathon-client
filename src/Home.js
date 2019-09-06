@@ -29,7 +29,7 @@ class Home extends Component {
 
 	render() {
 
-		if (this.state.user == 'Anonymous') {
+		if (this.state.user === 'Anonymous') {
 			return(
 				<div className="container">
 				 <Row>

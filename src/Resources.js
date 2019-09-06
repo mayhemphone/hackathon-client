@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Row, Col, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Row, Col, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import {FaHandHoldingHeart , FaDog, FaUserMd, FaChild, FaHandshake, FaUserFriends} from "react-icons/fa";
 
 class Resources extends Component {
