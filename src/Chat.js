@@ -20,7 +20,7 @@ class Chat extends Component {
   submitChat = (e) =>{
   	e.preventDefault()
   	// this.setState({stage:1})
-		axios.post("http://localhost:8000/chat/",{message: this.state.message })
+		axios.post("https://worth-it-client.herokuapp.com/chat",{message: this.state.message })
     .then(response=> {
      console.log(response)
      this.setState({stage:response.data.risk})

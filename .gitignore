@@ -11,6 +11,7 @@
 
 # production
 /build
+/worthitscreengrabs
 
 # misc
 .DS_Store
